@@ -1,0 +1,48 @@
+---
+title: "The ccaR package"
+#output: rmarkdown::html_vignette
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+    number_sections: true
+vignette: >
+  %\VignetteIndexEntry{The ccaR package}
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+
+
+# Introduction
+
+ccaR is a package ...
+
+
+# Installation
+
+You can download-install the package from github and load the library:
+
+
+```r
+#devtools::install_github('thdiakon/ccaR')
+library(ccaR)
+```
+
+# A case study
+
+This is a simple example of implementation of the code for the ccaR package.
+
+
+
+```r
+DATASET<-read.csv(system.file('extdata','miyazaki2017CCA.csv', package = 'ccaR') ,sep = ";")
+t<-cca(DATASET)
+View(t)
+```
+
+
+
+# References
+
