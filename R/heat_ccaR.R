@@ -67,7 +67,7 @@ heat_cca <- function(cm, size=5, chroma="#527e11"){
         ggplot2::scale_color_manual(guide = "none", values = c("black", "white")) +
         ggplot2::labs(caption = "*total number of primary studies included in the review \nCCA: Corrected Covered Area") +
         ggplot2::theme(
-            axis.title=element_blank(),
+            axis.title=ggplot2::element_blank(),
             axis.text.x=ggplot2::element_text(angle=90, vjust = 0.5, hjust=0.3
             ))
 
