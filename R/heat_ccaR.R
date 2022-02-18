@@ -1,6 +1,6 @@
 #' @title Plots the cca heatmap
 #'
-#' @description This function plots the cca heatmap. It is taking as input the citation matrix and the size.
+#' @description This function plots the cca heatmap. The tiles within the triangular matrix contain color-coded data that demonstrate the degree of overlap between pairs of reviews using the corrected covered area (CCA) measure. It is taking as input the citation matrix, the font size of the text in the tiles and the color used in the heatmap.
 #'
 #' @param cm A dataframe for the citation matrix
 #'
