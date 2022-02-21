@@ -4,7 +4,7 @@
 #'
 #' @param cm A dataframe for the citation matrix
 #'
-#' @param fontsize A number which controls the aesthetic of font size of the text in the tiles of the heatmap
+#' @param fontsize A number which controls the aesthetic of font size of the numbers in the tiles of the heatmap
 #'
 #' @param chroma The color of the heatmap
 #'
