@@ -4,7 +4,7 @@
 #'
 #' @param cm A dataframe for the citation matrix
 #'
-#' @param size A number which controls the aesthetic of font size of the text in the tiles of the heatmap
+#' @param fontsize A number which controls the aesthetic of font size of the text in the tiles of the heatmap
 #'
 #' @param chroma The color of the heatmap
 #'
@@ -13,9 +13,9 @@
 #' @example man/examples/example2.R
 #'
 #' @export
-heat_cca <- function(cm, size=5, chroma="#527e11"){
+heat_cca <- function(cm, fontsize=5, chroma="#527e11"){
 
-    c(missing(size), missing(chroma))  
+    c(missing(fontsize), missing(chroma))  
     
     # create a table with all the parameters
     V1<-c()
@@ -59,8 +59,8 @@ heat_cca <- function(cm, size=5, chroma="#527e11"){
         ggplot2::geom_tile(ggplot2::aes(fill = CCA_Percentage), color='grey') +
         ggplot2::geom_tile(data = data_hm2, ggplot2::aes(x = V3, y = V4), fill = "grey", color='grey', inherit.aes = F) +
         ggplot2::coord_equal() +
-        ggplot2::geom_text(ggplot2::aes(color = CCA_Percentage > 60, label = round(CCA_Percentage, 2)), size = size) +
-        ggplot2::geom_text(data = data_hm2, ggplot2::aes(x = V3, y = V4),  label = r2, size = size, inherit.aes = F) +
+        ggplot2::geom_text(ggplot2::aes(color = CCA_Percentage > 60, label = round(CCA_Percentage, 2)), size = fontsize) +
+        ggplot2::geom_text(data = data_hm2, ggplot2::aes(x = V3, y = V4),  label = r2, size = fontsize, inherit.aes = F) +
         ggplot2::scale_fill_gradient(low="white", limits = c(0, 100),
                             breaks=c(0, 20, 40, 60, 80, 100), high=chroma,
                             name = "CCA (%)") +
