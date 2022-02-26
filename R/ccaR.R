@@ -13,7 +13,7 @@
 cca <- function(cm){
 
     cm <- cm[, -1]
-    cm<-cm[,order(colnames(cm))]
+    cm <- cm[, order(colnames(cm))]
 
     studies<-nrow(cm)
     reviews<-ncol(cm)
