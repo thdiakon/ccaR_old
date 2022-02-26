@@ -24,6 +24,7 @@ heat_cca <- function(cm, fontsize=5, chroma="#527e11"){
 
     a <- cca(cm)
     cm <- cm[, -1]
+    cm <- cm[, order(colnames(cm))]
 
     a2 <- a[-nrow(a),]
 
