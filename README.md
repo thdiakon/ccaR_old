@@ -3,14 +3,14 @@
 
 ## Overview
 
-ccaR package provides functions for assessing and depicting primary study overlap across multiple reviews.
+ccaR package provides functions for assessing and depicting primary study overlap across multiple reviews. The functions from ccaR package may be useful for methodologists and overview authors in exploring and communicating the degree of overlap in overview of reviews.
 
 ## Installation
 
 ``` r
-# TYou can download-install the package from github and load the library:
-#devtools::install_github('thdiakon/ccaR')
-library(ccaR)
+# You can download-install the package from github and load the library:
+devtools::install_github('thdiakon/ccaR')
+
 ```
 
 
