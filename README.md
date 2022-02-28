@@ -8,7 +8,7 @@ ccaR package provides functions for assessing and depicting primary study overla
 ## Installation
 
 ``` r
-# You can download-install the package from github and load the library:
+# You can download-install the package from github:
 devtools::install_github('thdiakon/ccaR')
 
 ```
