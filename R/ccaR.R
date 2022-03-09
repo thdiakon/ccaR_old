@@ -59,7 +59,7 @@ cca <- function(cm){
     res<- data.frame(reviews,overlap_counts,
     N,r,c,CCA_Proportion,CCA_Percentage,stringsAsFactors=FALSE)
 
-#    return(res)
+    return(res)
 
 }
 
